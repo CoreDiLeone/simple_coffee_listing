@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+:root {
+  --Dark-Grey: #222222;
+  --Light-Grey: #c7c7c7;
+  --Dark: #121212;
+  --Light-Mint: #bae9ca;
+  --Medium-Grey: #676b70;
+}
+* {
+  font-family: "DM Sans", sans-serif;
+}
+.container-card {
+  border: 2px solid var(--Dark-Grey);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  border-radius: 13px;
+  background-color: var(--Dark-Grey);
+  font-size: 16px;
+}
+.card-image {
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.container-card-info-child {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.container-card-info-child h5 {
+  background-color: var(--Light-Mint);
+  color: var(--Dark-Grey);
+  padding: 3px;
+  border-radius: 3px;
+}
+.container-votes {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--Light-Grey);
+}
+.container-btns {
+  margin-bottom: 30px;
+}
+.container-btns button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bolder;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-all:hover, .btn-available:hover{
+  background-color: var(--Medium-Grey);
+  border-radius: 10px;
+
+} 
+
+@media screen and (min-width: 1024px ) {
+ .main-container-card{
+ 
+  max-width: 900px;
+ }
+}
+@media screen and (min-width: 641px) {
+  .main-container-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
