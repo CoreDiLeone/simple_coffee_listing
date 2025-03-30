@@ -5,7 +5,6 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Home from '../src/components/Home.jsx'
 import Product from '../src/components/Product.jsx'
 
-
 const router = createHashRouter([
   {
     path: '/',

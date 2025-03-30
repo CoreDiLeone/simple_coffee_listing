@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://CoreDiLeone.github.io/simple_coffee_listing'
+  base: 'https://coredileone.github.io/simple_coffee_listing'
 })
