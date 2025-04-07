@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Home from "./components/Home";
 import Product from "./components/Product";
 
@@ -6,12 +6,12 @@ import Product from "./components/Product";
 function App() {
   
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
       <Route path='/' element={ <Home />}/>
       <Route path='/product' element={ <Product />}/>
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
