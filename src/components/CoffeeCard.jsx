@@ -5,7 +5,8 @@ import "../styles/coffeeCard.css";
 
 const CoffeeCard = () => {
   const [data, setData] = useState([]);
-  const [filters, setFilters] = useState("");
+  const [filters, setFilters] = useState('');
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,19 +27,20 @@ const CoffeeCard = () => {
     setFilters(arr.filter((product) => product.available === true));
   };
 
+ 
   console.log("esta es la info filtrada:", filters);
   return (
     <>
       <div className="container-btns">
-        <button onClick={()=> setFilters(data) } className='btn-all'>All Products</button>
-        <button onClick={() => handlerFilter(data)} className='btn-available'>Available Now</button>
+        <button onClick={()=> setFilters(data)} className='btn-active'>All Products</button>
+        <button onClick={() => handlerFilter(data) } className='btn-active'>Available Now</button>
       </div>
       <div className="main-container-card">
       {(filters.length > 0 ? filters : data).map((item, index) => (
         <div className="container-card" key={index}>
-          
+          { item.popular ? <h4 className="popular">Popular</h4> : ''}
           <img src={item.image} alt={item.name} className="card-image" />
-          {}
+          
           <div className="container-card-info">
             <div className="container-card-info-child">
               <h4>{item.name}</h4> <h5>{item.price}</h5>

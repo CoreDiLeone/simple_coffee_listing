@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 :root {
-  --Dark-Grey: #222222;
+  --Dark-Grey: #1B1D1F;
   --Light-Grey: #c7c7c7;
-  --Dark: #121212;
-  --Light-Mint: #bae9ca;
-  --Medium-Grey: #676b70;
+  --Dark: #111315;
+  --Light-Mint: #BEE3CC;
+  --Medium-Grey: #6F757C;
+  --Yellow: #F6C768;
 }
 * {
   font-family: "DM Sans", sans-serif;
@@ -18,6 +19,7 @@
   border-radius: 13px;
   background-color: var(--Dark-Grey);
   font-size: 16px;
+  position: relative;
 }
 .card-image {
   border-radius: 12px;
@@ -53,12 +55,23 @@
   color: #fff;
   cursor: pointer;
 }
-.btn-all:hover, .btn-available:hover{
+.btn-active:hover {
   background-color: var(--Medium-Grey);
   border-radius: 10px;
 
 } 
+.popular{
 
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: var(--Yellow);
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: var(--Dark-Grey);
+  font-size: 12px;
+
+}
 @media screen and (min-width: 1024px ) {
  .main-container-card{
  
